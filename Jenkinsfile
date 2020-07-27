@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Compile') {
       steps {
-        sh label: '', script: 'gcc src/mainc'
+        sh label: '', script: 'cd src'
+        sh label: '', script: 'gcc mainc'
       }
     }
   }
