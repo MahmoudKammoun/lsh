@@ -9,7 +9,7 @@ pipeline {
     stage('Compile') {
       steps {
         sh label: '', script: 'cd src'
-        sh label: '', script: 'gcc mainc'
+        sh label: '', script: 'gcc main.c'
       }
     }
   }
