@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Compile') {
       steps {
-        gcc -o src/main.c
+        gcc src/main.c
       }
     }
   }
