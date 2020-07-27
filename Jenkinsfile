@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Source') {
       steps {
-        git 'https://github.com/MahmoudKammoun/lsh.git''
+        git 'https://github.com/MahmoudKammoun/lsh.git'
       }
     }
     stage('Compile') {
