@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Source') {
       steps {
-        git 'https://github.com/MahmoudKammoun/lsh.git'
+        git 'https://github.com/MahmoudKammoun/lsh/tree/master/src.git'
       }
     }
     stage('Compile') {
       steps {
-        sh label: '', script: 'cd src'
+        
         sh label: '', script: 'gcc -o lsh main.c'
       }
     }
