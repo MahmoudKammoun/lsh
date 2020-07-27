@@ -6,15 +6,10 @@ pipeline {
         git 'https://github.com/MahmoudKammoun/lsh.git'
       }
     }
-    stage('dep') {
-      steps {
-        
-        sh label: '', script: 'cd src'
-      }
-    }
+    
     stage('Compile') {
       steps {
-         sh label: '', script: 'gcc main.c'
+         sh label: '', script: 'gcc -o lsh2 src/main.c'
       }
     }
   }
