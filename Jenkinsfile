@@ -6,12 +6,12 @@ pipeline {
                echo 'hello word'
             }
             }
-        stage("Build") {
+        stage("Test") {
             steps {
                echo 'hello word'
             }
             }
-        stage("Build") {
+        stage("Run") {
             steps {
                echo 'hello word'
             }
