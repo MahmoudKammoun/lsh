@@ -3,18 +3,9 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-               echo 'hello word'
+               gcc src/main.c
             }
             }
-        stage("Test") {
-            steps {
-               echo 'hello word'
-            }
-            }
-        stage("Run") {
-            steps {
-               echo 'hello word'
-            }
-        }
+      
 }
     }
