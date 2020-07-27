@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-               gcc -o src/main.c
+               gcc -o lsh src/main.c
             }
             }
       
