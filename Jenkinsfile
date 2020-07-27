@@ -15,7 +15,7 @@ pipeline {
     stage('Compile') {
       steps {
         
-        sh label: '', script: 'gcc main.c'
+        gcc main.c
       }
     }
   }
