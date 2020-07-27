@@ -1,9 +1,20 @@
 pipeline {
     agent any
-
     stages {
         stage("Build") {
             steps {
-               gcc src/main.c
+               echo 'hello word'
+            }
+            }
+        stage("Build") {
+            steps {
+               echo 'hello word'
+            }
+            }
+        stage("Build") {
+            steps {
+               echo 'hello word'
             }
         }
+}
+    }
