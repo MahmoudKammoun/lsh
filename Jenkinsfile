@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Source') {
+    stage('Clone') {
       steps {
         git 'https://github.com/MahmoudKammoun/lsh.git'
       }
@@ -9,7 +9,7 @@ pipeline {
     
     stage('Compile') {
       steps {
-         sh label: '', script: 'gcc -o lsh2 src/main.c'
+         sh label: '', script: 'gcc -DLSH_USE_STD_GETLINE -o lsh src/main.c'
       }
     }
   }
