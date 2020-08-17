@@ -7,9 +7,9 @@ pipeline {
       }
     }
     
-    stage('Compile') {
+    stage('Configure the Linux kernel features and modules') {
       steps {
-         sh label: '', script: 'gcc -o lsh2 src/main.c'
+         sh label: '', script: 'cp -v /boot/config-$(uname -r) .config'
       }
     }
   }
